@@ -28,6 +28,7 @@ void sekwencja()
 
    PingPong->Label4->Caption = "Start!";
    Application->ProcessMessages(); Sleep(1000);
+   sndPlaySound("snd/start.wav",SND_ASYNC);
    PingPong->Timer_pilka->Enabled = true;
    PingPong->b->Visible = true;
    PingPong->Label4->Visible = false;
